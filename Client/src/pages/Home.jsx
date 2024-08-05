@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import Features from "../components/Features";
+import HowItWorks from "../components/HowItWorks";
+import Testimonials from "../components/Testimonials";
+import Cta from "../components/Cta";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -35,37 +39,39 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="my-6 mt-4 space-y-2 sm:my-8 sm:space-y-4 md:mt-10 md:space-y-6">
+          <div className="relative my-6 mt-4 space-y-2 sm:my-8 sm:space-y-4 md:mt-10 md:space-y-6">
+            <div className="absolute bottom-0 left-0 size-80 rounded-full bg-gradient-to-bl from-secondary-600 to-tertiary-600 opacity-20 blur-3xl"></div>
+            <div className="absolute right-0 top-0 size-80 rounded-full bg-gradient-to-tr from-secondary-600 to-tertiary-600 opacity-20 blur-3xl"></div>
             <h1 className="mx-auto max-w-3xl text-center text-4xl font-bold leading-none tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="text-secondary-600">AI</span>-Driven{" "}
               <span className="text-secondary-600">Innovation</span> in Web
               Design
             </h1>
-            <p className="mx-auto mb-6 max-w-2xl text-center text-slate-300 lg:text-lg">
+            <p className="mx-auto mb-6 max-w-2xl py-3 text-center text-slate-300 sm:py-0 lg:text-lg">
               Create stunning websites effortlessly with our advanced AI
               technology. Experience the future of web design with tools that
               make your ideas come to life.
             </p>
-            <div class="flex flex-col justify-center gap-4 text-center sm:flex-row">
+            <div className="flex flex-col justify-center gap-2 text-center sm:flex-row sm:gap-4">
               <Link
                 to="/"
-                className="rounded-lg bg-secondary-600 px-6 py-3 text-white shadow-lg transition duration-300 ease-in-out hover:bg-secondary-700"
+                className="rounded-lg bg-secondary-600 px-4 py-2 text-white shadow-lg transition duration-300 ease-in-out hover:bg-secondary-700 sm:px-6 sm:py-3"
               >
                 Get Started
               </Link>
               <Link
                 to="/"
-                className="rounded-lg border-2 border-tertiary-600 bg-transparent px-6 py-3 text-tertiary-600 transition duration-300 hover:bg-tertiary-600 hover:text-white"
+                className="rounded-lg border-2 border-tertiary-600 bg-transparent px-4 py-2 text-tertiary-600 transition duration-300 hover:bg-tertiary-600 hover:text-white sm:px-6 sm:py-3"
               >
                 Learn More
               </Link>
             </div>
           </div>
 
-          <div class="mx-auto flex w-full max-w-4xl">
-            <div class="relative z-10 flex w-full overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
-              <div class="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0052CC_20deg,transparent_120deg)]"></div>
-              <div class="relative z-20 flex w-full rounded-[0.60rem] bg-slate-900 p-2">
+          <div className="mx-auto flex w-full max-w-4xl">
+            <div className="relative z-10 flex w-full overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
+              <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0052CC_20deg,transparent_120deg)]"></div>
+              <div className="relative z-20 flex w-full rounded-[0.60rem] bg-slate-900 p-2">
                 <img
                   src="https://cdn.dribbble.com/userupload/11165619/file/original-65633598cd68164c2bb35d578a5117c2.png?crop=0x0-4093x3070&resize=400x300&vertical=center"
                   alt=""
@@ -77,6 +83,10 @@ const Home = () => {
         </div>
       </div>
       <Features />
+      <HowItWorks />
+      <Testimonials />
+      <Cta />
+      <Footer />
     </>
   );
 };
