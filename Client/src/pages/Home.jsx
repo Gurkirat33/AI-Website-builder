@@ -3,7 +3,7 @@ import Features from "../components/Features";
 import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/Testimonials";
 import Cta from "../components/Cta";
-import Footer from "../components/Footer";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <div className="section-container text-white">
           <div className="hidden justify-center md:mt-2 md:flex lg:mt-6">
             <div className="group relative">
-              <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-secondary-600 to-tertiary-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
+              <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-secondary-600 to-tertiary-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
               <button className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-black px-7 py-4 leading-none">
                 <span className="flex items-center space-x-5">
                   <svg
@@ -40,7 +40,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative my-6 mt-4 space-y-2 sm:my-8 sm:space-y-4 md:mt-10 md:space-y-6">
-            <div className="absolute bottom-0 left-0 size-80 rounded-full bg-gradient-to-bl from-secondary-600 to-tertiary-600 opacity-20 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 hidden size-80 rounded-full bg-gradient-to-bl from-secondary-600 to-tertiary-600 opacity-20 blur-3xl sm:block"></div>
             <div className="absolute right-0 top-0 size-80 rounded-full bg-gradient-to-tr from-secondary-600 to-tertiary-600 opacity-20 blur-3xl"></div>
             <h1 className="mx-auto max-w-3xl text-center text-4xl font-bold leading-none tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="text-secondary-600">AI</span>-Driven{" "}
@@ -70,7 +70,7 @@ const Home = () => {
 
           <div className="mx-auto flex w-full max-w-4xl">
             <div className="relative z-10 flex w-full overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
-              <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0052CC_20deg,transparent_120deg)]"></div>
+              <div className="absolute inset-0 h-full w-full animate-rotate rounded-full bg-[conic-gradient(#0052CC_20deg,transparent_120deg)]"></div>
               <div className="relative z-20 flex w-full rounded-[0.60rem] bg-slate-900 p-2">
                 <img
                   src="https://cdn.dribbble.com/userupload/11165619/file/original-65633598cd68164c2bb35d578a5117c2.png?crop=0x0-4093x3070&resize=400x300&vertical=center"
@@ -85,8 +85,8 @@ const Home = () => {
       <Features />
       <HowItWorks />
       <Testimonials />
+      <Faq />
       <Cta />
-      <Footer />
     </>
   );
 };

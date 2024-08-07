@@ -10,4 +10,12 @@
   .section-container {
     @apply mx-auto max-w-[86rem] px-4 py-2 md:px-6 md:py-4;
   }
+  .remove-arrow::-webkit-inner-spin-button,
+  .remove-arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .remove-arrow {
+    -moz-appearance: textfield;
+  }
 }

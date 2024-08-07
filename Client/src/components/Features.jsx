@@ -16,7 +16,7 @@ const Features = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div key={index} className="group relative">
-              <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-secondary-600 to-tertiary-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
+              <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-secondary-600 to-tertiary-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
               <div className="relative flex flex-col rounded-lg bg-primary-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl md:h-64 lg:h-72">
                 {" "}
                 <div className="mb-4 text-5xl text-secondary-500">
